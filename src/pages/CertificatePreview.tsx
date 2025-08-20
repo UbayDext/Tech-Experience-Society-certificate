@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import BottomLayer from "../assets/bottom-layer2.png";
 import DefaultImage from "../assets/aqua.png";
-import TopLayer from "../assets/bottom-layer2.png";
+// import TopLayer from "../assets/bottom-layer2.png";
 import { achivements } from "@/constants/achivements";
 import { createSlug } from "@/utils/functions";
 import Tong from "../assets/tong.png";
@@ -119,25 +119,25 @@ export default function CertificatePreview() {
           src={graphImage || DefaultImage}
           className="w-56 h-72 absolute z-80 left-4 bottom-4 opacity-40"
         />
-        <div
+        {/* <div
           className="absolute z-90 inset-0 w-full h-full bg-transparent"
           style={{
             backgroundImage: `url(${TopLayer})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
-        ></div>
+        ></div> */}
         <div className="absolute inset-0  flex flex-col justify-center items-center p-8 sm:p-12 md:p-12 lg:p-12 text-[#fff]">
-          <h3 className="text-sm  sm:text-md md:text-xl lg:text-2xl font-bold mb-12 sm:mb-16 md:mb-16 lg:mb-16">
-            {name || "Nama Kisanak"}
+          <h3 className="text-sm  sm:text-md md:text-xl lg:text-2xl font-bold mb-20 sm:mb-20 md:mb-20 lg:mb-20">
+            {name || "Nama Akang"}
           </h3>
         </div>
         <div className="absolute inset-0 flex flex-col justify-center items-center p-8 sm:p-12 md:p-12 lg:p-12 text-[#fff]">
-          <h3 className="text-sm  sm:text-md  md:text-xl lg:text-2xl font-bold mt-[5rem]">
+          <h3 className="text-sm  sm:text-md  md:text-xl lg:text-2xl font-bold mt-[13rem]">
             {certificates[achivement]["name"]}
           </h3>
         </div>
-        <div className="absolute inset-0 flex flex-col justify-center items-start p-8 sm:p-12 md:p-12 lg:p-12  text-[#fff]">
+        <div className="absolute inset-0 flex flex-col justify-center items-start p-8 sm:p-12 md:p-12 lg:p-5  text-[#fff]">
           <p className="text-[10px] sm:text-[10px] md:text-[10px] lg:text-[12px] font-bold mt-24 sm:mt-36 md:mt-36 lg:mt-36">
             {getFormattedDate()}
           </p>
