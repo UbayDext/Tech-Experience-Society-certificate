@@ -1,12 +1,12 @@
 import { setCapitalize } from "@/utils/functions";
 
 export const achivements: string[] = [
-    "Programmer trial & error",
-    "Master Ctrl+C Crtl+V Programming",
-    "Tukang Debug di Production",
-    "DevOps Ugal-Ugalan",
+     "Kang Borong chease roll",
+    "Master P DIDIY",
+    "Tukang Debug-kedebug",
+    "DevOps Blender",
     "Cuman Bisa Make PHP",
     "Penjelajah Fesnuk",
     "Kang ngehek Akun FB sendiri",
-    "Cuman bisa liatin repo kisanak",
+    "Cuman bisa liatin Risol 2000 dapet 3",
 ].map((achivement) => setCapitalize(achivement));

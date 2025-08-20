@@ -31,7 +31,7 @@ export default function CertificateGenerate() {
 
   return (
     <div className="flex flex-col items-center h-screen">
-      <h2 className="text-xl mb-4 capitalize">Memuat sertifikat kisanak ...</h2>
+      <h2 className="text-xl mb-4 capitalize">Memuat sertifikat Multifungsi ...</h2>
       <Progress value={progress} className="w-full max-w-md" />
     </div>
   );

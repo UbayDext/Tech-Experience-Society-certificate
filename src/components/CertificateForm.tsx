@@ -43,7 +43,7 @@ const CertificateForm: React.FC<CertificateFormProps> = ({ onSubmit }) => {
     <div className="flex justify-center items-center h-screen">
       <Card className="w-[350px]">
         <CardHeader>
-          <CardTitle>Sertifikat Kekisanakan </CardTitle>
+          <CardTitle>Sertifikat Multifungsi </CardTitle>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit}>
@@ -66,7 +66,7 @@ const CertificateForm: React.FC<CertificateFormProps> = ({ onSubmit }) => {
                       reader.readAsDataURL(file);
                     }}}
                 />
-                <Label htmlFor="achivement">Jenis Sertifikat Kisanak</Label>
+                <Label htmlFor="achivement">Jenis Sertifikat Multi fungsi</Label>
                 <Select
                   onValueChange={(value) => {
                     setAchivement(value);
@@ -87,10 +87,10 @@ const CertificateForm: React.FC<CertificateFormProps> = ({ onSubmit }) => {
                 </Select>
               </div>
               <div className="flex flex-col space-y-1.5">
-                <Label htmlFor="name">Nama Kisanak </Label>
+                <Label htmlFor="name">Nama Akang </Label>
                 <Input
                   id="name"
-                  placeholder="Masukin nama kisanak"
+                  placeholder="Masukin nama Akang"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
